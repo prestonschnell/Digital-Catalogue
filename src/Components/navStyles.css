@@ -1,0 +1,38 @@
+.nav-container {
+    background-color: #121111;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#menu-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
