@@ -30,7 +30,18 @@ const ProductPage = () => {
 
       {/* Dropdown Menu where we'll put the Product Details, Specifications, and Questions and Answers. */}
         <div className="drop-menu">
-          
+          <div className="drop-item">
+            <h2>Product Details</h2>
+            <p>Here are the product details.</p>
+          </div>
+          <div className="drop-item">
+            <h2>Specifications</h2>
+            <p>Here are the product specifications.</p>
+          </div>
+          <div className="drop-item">
+            <h2>Questions & Answers</h2>
+            <p>Here are the questions and answers.</p>
+          </div>
         </div>
 
 
