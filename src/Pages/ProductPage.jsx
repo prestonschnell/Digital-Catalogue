@@ -3,6 +3,7 @@ import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
 import Stock from '../assets/istockphoto-1147544807-612x612.jpg'
 import '../Components/productPageStyles.css'
+import { ArrowDown } from 'lucide-react';
 
 const ProductPage = () => {
   return (
@@ -31,17 +32,37 @@ const ProductPage = () => {
       {/* Dropdown Menu where we'll put the Product Details, Specifications, and Questions and Answers. */}
         <div className="drop-menu">
           <div className="drop-item">
-            <h2>Product Details</h2>
-            <p>Here are the product details.</p>
+            <div className="details">
+              <h2>Product Details</h2>
+              <p>Here are the product details.</p>
+            </div>
+            <div className="icon">
+              <ArrowDown />
+            </div>
           </div>
           <div className="drop-item">
-            <h2>Specifications</h2>
-            <p>Here are the product specifications.</p>
+            <div className="details">
+              <h2>Specifications</h2>
+              <p>Here are the product specifications.</p>
+            </div>
+            <div className="icon">
+              <ArrowDown />
+            </div>
           </div>
           <div className="drop-item">
-            <h2>Questions & Answers</h2>
-            <p>Here are the questions and answers.</p>
+            <div className="details">
+              <h2>Questions & Answers</h2>
+              <p>Here are the questions and answers.</p>
+            </div>
+            <div className="icon">
+              <ArrowDown />
+            </div>
           </div>
+        </div>
+
+        <div className="event-photos">
+          <h2>Event Set Pieces Using This Product</h2>
+          <img src={Stock} alt="" />
         </div>
 
 

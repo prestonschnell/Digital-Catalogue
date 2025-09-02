@@ -4,6 +4,7 @@ import Footer from '../Components/Footer.jsx'
 import Card from '../Components/Card.jsx'
 import '../Components/categoriesStyles.css'
 import Stock from '../assets/istockphoto-1147544807-612x612.jpg'
+import { ArrowDown } from 'lucide-react';
 
 const Inventory = () => {
   return (
