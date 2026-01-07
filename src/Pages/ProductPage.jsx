@@ -5,7 +5,7 @@ import Stock from '../assets/istockphoto-1147544807-612x612.jpg'
 import '../Components/productPageStyles.css'
 import { ArrowDown } from 'lucide-react';
 
-const ProductPage = () => {
+const ProductPage = (props) => {
   return (
     <div>
         <Nav/>
@@ -13,18 +13,18 @@ const ProductPage = () => {
         {/* Main Product Element */}
         <div className="product-container">
           <div className="img-product">
-              <img src={Stock} alt="" />
+              <img src={props.img} alt="" />
           </div>
           <div className="product-info">
             <div className="product-name">
-              <h1>Here is the Name of the Product.</h1>
-              <p>here is a short description of each item for our product. </p>
+              <h1>{props.name}</h1>
+              <p>{props.description}</p>
             </div>
             <div className="product-details">
                 <h2>Dimensions</h2>
-                <p># x #</p>
-                <p>Quantity: #</p>
-                <p>Availability: # in Stock</p>
+                <p>{props.dimensions}</p>
+                <p>Quantity: {props.quantity}</p>
+                <p>Availability: {props.stock} in Stock</p>
               </div>
           </div>
         </div>
@@ -64,6 +64,7 @@ const ProductPage = () => {
           <h2>Event Set Pieces Using This Product</h2>
           <img src={Stock} alt="" />
         </div>
+        
 
 
 
