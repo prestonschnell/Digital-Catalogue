@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/Digital-Catalogue/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Royal Digital Catalogue</title>
+    <script>
+  // Restore route from GitHub Pages redirect
+  (function () {
+    var search = window.location.search;
+    if (search.startsWith("?/")) {
+      var newPath = search.slice(1); // remove leading '?'
+      window.history.replaceState(null, "", newPath);
+    }
+  })();
+</script>
     <script type="module" crossorigin src="/Digital-Catalogue/assets/index-NjIAj6r0.js"></script>
     <link rel="stylesheet" crossorigin href="/Digital-Catalogue/assets/index-BU8ju0tP.css">
   </head>
